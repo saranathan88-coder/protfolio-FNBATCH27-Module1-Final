@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Online Tickets</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+     <!-- Bootstrap LINKS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- script file link -->
+    <script src="script.js"></script>
+
+    <!-- font awsome link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<!-- Header Section  height="50" width="150"--> 
+<header id="header-sec">
+<div id="head-pic1" >
+<img src="logo1.jpg" alt="pic"><b> .com</b>
+</div>
+
+<div id="head-menu">
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#deals-sec">Destination</a>
+<a href="#contact-section">Contact</a>
+<a href="#services">Service</a>
+
+</div>
+
+<div id="head-login">
+<a href="#"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Login</a>
+<button type="button">Sign Up</button>
+</div>
+</header>
+
+
+<!-- banner section -->
+<section id="banner">
+    <div class="container">
+        <div class="row">
+      <div class="col-md-6">
+        <p class="promo-title">Get started your exciting <span style="color: blue;">journey</span> with us.</p>
+        <P>A Team of experinced tourisum professionals will provide you with the best advice and tips for your desire place.</P>
+       <button type="button" id="btn-click">Discover Now</button>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="banner1.png" alt="pic1" height="300" width="400" class="image-fluid">
+      </div>
+    </div>
+    </div>
+</section>
+
+<!--Main Section  -->
+<main id="main-sec">
+    <div id="main-div1">
+    <a href="#">
+    <img src="flight.webp" alt="pic" height="60" width="100">
+     Flights</a>
+    <a href="#">
+    <img src="train.webp" alt="pic" height="60" width="100">
+    Trains</a>
+    <a href="#">
+    <img src="bus.webp" alt="pic" height="60" width="100">
+    Buses</a>
+    </div>
+    
+    <div id="main-div2">
+    <ul class="menu">
+    <li>
+    <a href="#"><img id="head-pic2" src="dots.webp" alt="pic" height="50" width="50">&nbsp;&nbsp;More</a>
+        <ul class="submenu">
+            <li><a href="#"><i class="fa-brands fa-cc-visa"></i>&nbsp;&nbsp;Book Visa</a></li>
+            <li><a href="#"><i class="fa-solid fa-user-group"></i>&nbsp;&nbsp;Group Booking</a>
+            </li>
+        </ul>
+    </li></ul>
+    <a href="#" id="offers">Offers</a>
+    </div>
+
+    <div id="main-div3">
+    <a href="#"><img src="cus-service.jpg" height="20" width="30">Customer Service</a>
+    </div>
+</main>
+
+
+
+<section id="input-sec">
+<div class="container"> 
+
+<!-- 1 -->
+<div id="div-input"><div id="input-div1">
+<button type="button" value="oneway">One Way</button>
+<button type="button" value="roadtrip">Road Trip</button>
+<button type="button" value="multicity">Multicity</button>
+</div>
+<div id="input-div2">
+  <h5>Search Lowest Price</h5>
+</div></div>
+
+<!-- 2 -->
+<div id="fsearch">
+<div id="from">
+  <label for="from">From</label><br>
+   <select>
+    <option value="delhi">Delhi<br>
+       <h6>Indragandhi Internation Airport</h6>
+    </option>
+    <option value="chennai">Chennai
+    <h6>Madras,Chennai Internation Airport</h6>
+    </option>
+    <option value="coimbatore">Coimbatore</option>
+    <option value="madhurai">Madhurai</option>
+    <option value="madhurai">Bangalore</option>
+    <option value="madhurai">Kolkata</option>
+    <option value="madhurai">Delhi</option>
+   </select>
+</div>
+
+<div id="to">
+  <label for="to">To</label><br>
+   <select>
+    <option value="none">Select Your City</option>
+    <option value="chennai">Chennai</option>
+    <option value="coimbatore">Coimbatore</option>
+    <option value="madhurai">Madhurai</option>
+    <option value="madhurai">Bangalore</option>
+    <option value="madhurai">Kolkata</option>
+    <option value="madhurai">Delhi</option>
+   </select>
+</div>
+
+<div id="ddate">
+  <label for="ddate">DEPARTURE DATE</label><br>
+  <input type="date">
+</div>
+
+<div id="rdate">
+  <label for="rdate">RETURN DATE</label><br>
+  <input type="date">
+</div>
+
+<div id="class">
+  <label for="class">TRAVELLER & CLASS</label><br>
+   <select>
+    <option value="none">Select</option>
+    <option value="chennai">Adult</option>
+    <option value="coimbatore">Children</option>
+    <option value="madhurai">Infant</option>
+   </select>
+</div>
+
+<div id="ssearch">
+  <br>
+  <button type="button">SEARCH</button>
+</div></div>
+
+<!-- 3 -->
+<div id="div-radio"><div id="radio-div1">
+<label for="gender">&nbsp;Special Fares (Optional) :&nbsp;</label>
+<input type="radio" class="expand1">&nbsp;Defence Forces&nbsp;<input type="radio">&nbsp;Students&nbsp;
+<input type="radio">&nbsp;Senior Citizens&nbsp;<input type="radio">&nbsp;Doctor Nurses&nbsp;
+</div>
+<div id="radio-div2">
+  <input type="checkbox" name="option_name" value="option_value">
+  Book Hotel & Get up to 45% OFF*
+</div></div>
+
+</div>
+</section>
+
+
+<!-- service section -->
+ <section id="services">
+  <div class="container text-center">
+    <h1 class="title">Why book with us?</h1>
+    <div class="row text-center">
+
+      <div class="col-md-2 services">
+        <img class="rounded" src="easybooking.svg" alt="pic1" height="50" width="50" class="services-img">
+        <h4>Easy Booking</h4>
+        <p>We offer easy and convenient flight bookings with attractive offers.</p>
+      </div>
+
+      <div class="col-md-2 services">
+        <img class="rounded" src="lowestprice.svg" alt="pic1" height="50" width="50" class="services-img">
+        <h4>Lowest Price</h4>
+        <p>We ensure low rates on hotel reservation, holiday packages and on flight tickets.</p>
+      </div>
+
+      <div class="col-md-2 services">
+        <img class="rounded" src="refund.svg" alt="pic1" height="50" width="50" class="services-img">
+        <h4>Instant Refund</h4>
+        <p>Get instant refunds effortlessly on your travel bookings with us.</p>
+      </div>
+
+      <div class="col-md-2 services">
+        <img class="rounded" src="support.svg" alt="pic1" height="50" width="50" class="services-img">
+        <h4>24/7 Support</h4>
+        <p>Get assistance 24/7 on any kind of travel related query. 
+          We are happy to assist you.</p>
+      </div>
+
+      <div class="col-md-2 services">
+        <img class="rounded" src="deals.svg" alt="pic1" height="50" width="50" class="services-img">
+        <h4>Exciting Deals</h4>
+        <p>Enjoy exciting deals on flights, hotels, buses, car rental and tour packages.</p>
+      </div>
+
+    </div><br>
+    <button type="button" class="btn btn-primary">All Services</button>
+  </div>
+ </section>
+
+
+<section id="trip-sec">
+  <div class="container">
+    <h1>Get inspired for your next trip</h1>
+    <div id="trip_main">
+     <div class="row">
+
+      <div class="col-sm-4 mb-1 mb-sm-0">
+        <div class="card" style="width: 18rem;height: 10rem;">
+          <div class="card-body">
+            <a href="#"> <div class="trip1">
+            <h4>London</h4>  
+            <p class="card-text"></p></div></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 mb-1 mb-sm-0">
+        <div class="card" style="width: 18rem;height: 10rem;">
+          <div class="card-body">
+           <a href="#">  <div class="trip2">
+            <h4>Chennai</h4>  
+            <p class="card-text"></p></div></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 mb-1 mb-sm-0">
+        <div class="card" style="width: 18rem;height: 10rem;">
+          <div class="card-body">
+           <a href="#">  <div class="trip3">
+            <h4>Goa</h4>  
+            <p class="card-text"></p></div></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 mb-1 mb-sm-0">
+        <div class="card" style="width: 18rem;height: 10rem;">
+          <div class="card-body">
+           <a href="#">  <div class="trip4">
+            <h4>Colombo</h4>  
+            <p class="card-text"></p></div></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 mb-1 mb-sm-0">
+        <div class="card" style="width: 18rem;height: 10rem;">
+          <div class="card-body">
+            <a href="#"> <div class="trip5">
+            <h4>Penang</h4>  
+            <p class="card-text"></p></div></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 mb-1 mb-sm-0">
+        <div class="card" style="width: 18rem;height: 10rem;">
+          <div class="card-body">
+           <a href="#">  <div class="trip6">
+            <h4>Warsaw</h4>  
+            <p class="card-text"></p></div></a>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<br><br>
+<section id="scroll-section">
+  <div class="container">
+    <h2>Places you may like</h2><br>
+    <div class="scroll-container" id="container-sub">
+      <a href="#"><img src="simg1.webp" alt="pic" height="370" width="200"></a> 
+      <a href="#"><img src="simg2.jpg" alt="pic" height="370" width="200"></a>
+      <a href="#"><img src="simg3.jpg" alt="pic" height="370" width="200"></a>
+      <a href="#"><img src="simg4.jpg" alt="pic" height="370" width="200"></a>
+      <a href="#"><img src="simg5.jpg" alt="pic" height="370" width="200"></a>
+      <a href="#"><img src="simg6.jpg" alt="pic" height="370" width="200"></a>
+      <a href="#"><img src="simg7.jpg" alt="pic" height="370" width="200"></a>
+      <a href="#"><img src="simg8.avif" alt="pic" height="370" width="200"></a>
+      <a href="#"><img src="simg9.jpg" alt="pic" height="370" width="200"></a>
+    </div>
+  </div>
+</section><br>
+
+<section id="deals-sec">
+  <div class="container">
+    <h2>Best vacation Plan</h2><br>
+    <div class="gallery-container">
+    <!-- Image element, initially showing the first image -->
+     <!-- style="width:100%; max-width:500px;" -->
+    <img id="currentImage" src="alappuzha.jpg" alt="Gallery Image" style="max-width:800px; max-height: 400px;"><br><br><br>
+
+    <!-- Previous Button -->
+    <button class="arrow-btn left" onclick="changeImage(-1)">&#8592;</button> <!-- or use "❮" -->
+
+    <!-- Next Button -->
+    <button class="arrow-btn right" onclick="changeImage(1)">&#8594;</button> <!-- or use "❯" -->
+</div>
+  </div>
+</section><br><br>
+
+<script>
+  // Array of image sources
+const images = ["mysore.jpg","temple.jpg","taj.jpg", "england.jpg", "paris.jpg", "rajasthan.jpg"];
+let currentIndex = 0;
+const currentImageElement = document.getElementById("currentImage");
+
+function changeImage(direction) {
+    // Update the index based on direction (-1 for prev, 1 for next)
+    currentIndex += direction;
+
+    // Wrap around the image array (go to last if past first, go to first if past last)
+    if (currentIndex < 0) {
+        currentIndex = images.length - 1;
+    } else if (currentIndex >= images.length) {
+        currentIndex = 0;
+    }
+
+    // Update the src attribute of the image element
+    currentImageElement.src = images[currentIndex];
+}
+</script>
+
+<section id="places-section">
+  <div class="container">
+  <h2>Exclusive Deals & Discounts</h2><br>
+  <div id="places-div">
+    <div class="row">
+      <!-- 1 -->
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card" style="width: 18rem;">
+          <img src="rajasthan1.jpg" class="card-img-top" alt="pic">
+            <div class="card-body">
+              <h5 class="card-title">Rajasthan</h5>
+              <p class="card-text">Rajasthan is one of the most visited states in India. 
+                It's not surprising because it shows India at its most colorful and 
+                exotic best.</p>
+              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+              <p id="amt" class="card-text">
+                <small>
+                  <label id="deal1">$950</label>&nbsp;&nbsp;&nbsp;
+                  <label id="deal2">$850</label>
+                </small></p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+        </div>
+      </div>
+      <!-- 2 -->
+       <div class="col-sm-6 mb-6 mb-sm-0">
+        <div class="card" style="width: 18rem;">
+          <img src="kerala.jpg" class="card-img-top" alt="pic">
+            <div class="card-body">
+              <h5 class="card-title">Kerala</h5>
+              <p class="card-text">The coastal state of Kerala is rich in distinctive 
+                culture and unspoiled tropical beauty. Don't miss these top six Kerala
+                 tourist places to visit.</p><br>
+              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+              <p id="amt" class="card-text">
+                <small>
+                  <label id="deal1">$850</label>&nbsp;&nbsp;&nbsp;
+                  <label id="deal2">$750</label>
+                </small></p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+        </div>
+      </div>
+      <!-- 3 -->
+       <div class="col-sm-6 mb-6 mb-sm-0">
+        <div class="card" style="width: 18rem;">
+          <img src="Himachal.jpg" class="card-img-top" alt="pic">
+            <div class="card-body">
+              <h5 class="card-title">Himachal</h5>
+              <p class="card-text">Top places to visit in Himachal Pradesh like Kasauli,
+                 Shimla, Kullu, Manali, Dharamshala, Kangra, Chamba and Dalhousie.</p>
+              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+              <p id="amt" class="card-text">
+                <small>
+                  <label id="deal1">$950</label>&nbsp;&nbsp;&nbsp;
+                  <label id="deal2">$850</label>
+                </small></p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+        </div>
+      </div>
+      <!-- 4 -->
+       <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card" style="width: 18rem;">
+          <img src="Maharashtra.jpg" class="card-img-top" alt="pic">
+            <div class="card-body">
+              <h5 class="card-title">Maharashtra</h5>
+              <p class="card-text">These top Maharashtra tourist destinations offer a 
+                diverse mix of city, ancient cave temples, forts, mountains, wineries, 
+                and beaches.</p><br>
+              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+              <p id="amt" class="card-text">
+                <small>
+                  <label id="deal1">$750</label>&nbsp;&nbsp;&nbsp;
+                  <label id="deal2">$650</label>
+                </small></p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+        </div>
+      </div>
+
+    </div> 
+  </div>
+
+
+</div>
+</section>
+
+
+<!-- Contact section -->
+ <section id="contact-section">
+  <div class="container">
+    <div id="contact-div">
+      <h4>Travel Contact Form</h4><br>
+
+
+<form action="submit_form.html" method="POST">
+  <table style="background-color: #1bf9dc;font-weight: bold;">
+    <tr style="background-color: rgb(19, 151, 252);color:white;">
+      <td colspan="2" ><span>*</span><label for="fullname">Full Name</label></td></tr>
+    <tr> 
+      <td><input type="text" placeholder="Enter your name" pattern="[a-z]{4,15}" title="Enter your firstname" required><br>
+      <label style="margin-right: 140px;font-size:x-small;">First Name</label>
+      </td>
+      <td><input type="text"><br>
+      <label style="font-size: x-small;">Last Name<label></label>
+      </td>
+    </tr>
+    <tr style="background-color: rgb(19, 151, 252);color:white;">
+      <td><span>*</span><label for="email">Email</label></td>
+      <td><span>*</span><label for="phone">Phone Number</label></td>
+    </tr>
+    <tr>
+      <td>
+      <input type="email" placeholder=" ex: sample@gmail.com" pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" title="Enter valid email" required><br>
+      <label style="font-size: x-small;">example@example.com<label></label>
+      </td>
+      <td>
+      <input type="tel" placeholder=" 98456XXXXX" pattern="\d{10}" minlength="10" maxlength="10" title="10 digits, no separators" required><br>
+      <label style="font-size: x-small;">Please enter a valid phone number.<label></label>
+      </td>
+    </tr>
+    <tr style="background-color: rgb(19, 151, 252);color:white;">
+      <td colspan="2"><label for="address">Address</label></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="expand"><input type="text"><br>
+      <label style="font-size: x-small;">street address<label></label>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="text"><br>
+      <label style="font-size: x-small;">city<label></label>
+      </td>
+      <td><input type="text"><br>
+      <label style="font-size: x-small;">State / Province<label></label>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="expand"><input type="text"><br>
+      <label style="font-size: x-small;">postal / zipcode<label></label>
+      </td>
+    </tr>
+    <tr style="background-color: rgb(19, 151, 252);color:white;">
+      <td><label for="dcity">Departure City</label></td>
+      <td><label for="acity">Arrivel City</label></td>
+    </tr>
+    <tr>
+      <td><input type="text" placeholder=" Enter your city" pattern="[a-z]{3,15}" title="Enter your Departure City" required></td>
+      <td><input type="text" placeholder=" Enter your city" pattern="[a-z]{3,15}" title="Enter your Arrivel City" required></td>
+    </tr>
+    <tr style="background-color: rgb(19, 151, 252);color:white;">
+      <td colspan="2"><label for="dt">Departure Date & Time</label></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="expand">
+        <input type="date"><input type="time">
+      <select>
+        <option>AM</option>
+        <option>PM</option>
+      </select>
+      </td>
+    </tr>
+
+    <tr style="background-color: rgb(19, 151, 252);color:white;">
+      <td colspan="2" style="padding-top: 20px;">
+        <label for="arrangements">Travel Arrangements Neede</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" class="expand">
+        <input type="radio">Flights&nbsp;&nbsp;&nbsp;
+        <input type="radio">Hotel&nbsp;&nbsp;&nbsp;
+        <input type="radio">Renter Car&nbsp;&nbsp;&nbsp;
+        <input type="radio">Other&nbsp;&nbsp;&nbsp;
+      </td>
+    </tr>
+
+    <tr style="background-color: rgb(19, 151, 252);color:white;">
+      <td colspan="2" style="padding-top: 20px;">
+        <label for="files">Please upload all necessary files.</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <input type="file">
+      </td>
+    </tr>
+
+    <tr style="background-color: rgb(19, 151, 252);color:white;">
+      <td colspan="2" style="padding-top: 20px;"><l
+        abel for="info">Addtional Information</label></td>
+    </tr>
+
+    <tr>
+      <td colspan="2" class="expand">
+        <textarea rows="5" placeholder=" Type your Message here"></textarea>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" class="expand"><button type="submit" value="Submit">Submit</button></td>
+    </tr>
+  </table>
+</form>
+
+  </div>
+  </div>
+ </section>
+
+
+<!-- About section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+      <div class="col-md-15">
+        <h3>About Nathan</h3>
+        <P>&nbsp;&nbsp;&nbsp;&nbsp;Launched in 2026, Nathan is a technology company focused on 
+          empowering Indian travellers to plan, book and manage their 
+          trips across rail, air, buses and hotels. We assist travellers 
+          in making smarter travel decisions by leveraging artificial 
+          intelligence, machine learning, and data science led innovations
+           on our OTA platforms, comprising our websites and mobile 
+           applications. Our vision is to become the most customer-centric 
+           travel company, by offering the best customer experience to our
+            users. Our focus on travel utility and customer experience for
+             travellers in the 'next billion user' segment is driven by 
+             technology, cost-efficiency and our culture of innovation has 
+             made us India's leading travel ecosystem for the 'next billion
+              users'.<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Our OTA platforms allow travellers to book flight tickets,
+             train tickets, bus tickets, hotels and cabs, while providing 
+             travel utility tools and services developed using in-house
+              proprietary algorithms and crowd-sourced information,
+               including train PNR status and confirmation predictions,
+                train seat availability alerts, train running status 
+                updates and delay predictions, flight status updates,
+                 bus running status, pricing and availability alerts, 
+                 deal discovery, destination content, personalized
+                  recommendations, instant fare alerts, and automated 
+                  customer support services. Read our travel stories 
+                  where we cover everything from flight news, latest 
+                  travel news, Indian Railways reservation updates and more. 
+                  Let us help you plan your next vacation with our trip planner.</P>
+      </div>
+    </div>
+    </div>
+</section>
+
+<footer id="footer-sec">
+<div class="container">
+ <div class="main-foot">
+
+    <div class="first-foot"><a href="#">
+     <em>Back to Top</em></a></div>
+
+    <div class="second-foot">
+    <div class="footer-div1">
+      <h5>Contact Us</h5>
+      <a href="#">Customer Support</a>
+      <a href="#">Service Guarantee</a>
+      <a href="#">More Service Info</a>
+      <div id="foot_social">
+      <a href="#"><i class="fa-brands fa-github"></i></a>&nbsp;&nbsp;
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>&nbsp;&nbsp;
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>&nbsp;&nbsp;
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+    <div class="footer-div2">
+      <h5>About</h5>
+      <a href="#">About Nathan.com</a>
+      <a href="#">Careers</a>
+      <a href="#">Nathan App Download</a>
+      <a href="#">Conditions of Use & Sale</a>
+      <a href="#">Privacy Notice</a>
+    </div>
+
+    <div class="footer-div3">
+      <h5>Other Services</h5>
+      <a href="#">Investor Relations</a>
+      <a href="#">Affiliate Programme</a>
+      <a href="#">Affiliate Programme</a>
+      <a href="#">Become a Supplier</a>
+      <a href="#">Security</a>
+    </div>
+    </div>
+
+    <br>
+    <div class="third-foot">
+
+      <div>
+        <h5>Payment Methods</h5><br>
+        <img src="ebay.png" alt="pic" height="50" width="50">
+        <img src="bitcoin.png" alt="pic" height="50" width="50">
+        <img src="meastro.png" alt="pic" height="50" width="50">
+        <img src="mastercard.jpg" alt="pic" height="50" width="50">
+        <img src="paypal.png" alt="pic" height="50" width="50">
+        <img src="visa1.png" alt="pic" height="50" width="50">
+      </div>
+
+      <br>
+      <a href="#">Copyright © 2026 nathan.com All rights reserved</a>
+      <h6>Nathan.com, Inc. or its affiliates</h6>
+    </div>
+
+  </div>
+</div>
+</footer>
+
+</body>
+</html>
